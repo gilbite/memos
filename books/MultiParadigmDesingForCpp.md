@@ -9,10 +9,16 @@ https://books.google.co.jp/books/about/Multi_paradigm_Design_for_C++.html?id=r7R
 ### chapter1
 
 * ビジネス要件を満たすことはもちろんだが、できるだけ理解可能で簡単に"build"できること、そして長い時間を書けて進化しマーケットにも適応できるようにすることが設計の目的
-* "Domain Engineering"
-  * 設計や中間物のreuseを意図して、ビジネス(domain)の抽象化律
+* Domain Engineering
+  * 設計や中間物のreuseを意図して、ビジネス(domain)の抽象化律
   * "reuse" はよい設計からくる恩恵の一つであり、それを可能にする設計テクニックは時が経っても高い拡張性やメンテナンス性の獲得に導く。
   * OOだと、安定普遍的なものを親クラスに、そうでないもの派生クラスに、的に共通化したりするが、一方で OO とは関係ない generics みたいな共通化のやり方もあるわけじゃろ？Domain Engineering てのは、両方カバーする。
-* "Domain Analysis"
-  * そもそもパラダイムは一つじゃなくて、それぞれに独自の ルールや抽象化モデリング、、みたいなもんを持っとる
-  * 特に "commonality" と "variation" の観点で見た時に、特徴づけられやすい。まずはここに着目すること。
+* Domain Analysis
+  * そもそもパラダイムは一つじゃなくて、それぞれに独自の ルールや抽象化モデリング、、みたいなもんを持っとる
+  * 特に "commonality" と "variation" の観点で見た時に、特徴づけられやすい。まずはここに着目すること。
+  * "family" => OOで言うところの Object
+* "application engineering"
+  * commanality/variation をどう実装に落ち着けてくか、例:classやtemplate他、っていう、いわゆる一般人が言うところの「設計」
+* analysis
+  * どういう基盤使うのかとかは実装の問題のように見えるけど、最終的なプロダクトに大きく関わってくるので、これも分析
+  * 設計は実装完了するまで続くじゃろ？つまりはアレじゃ、analysis もずっと続くっちゅうこと
